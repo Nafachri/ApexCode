@@ -1,0 +1,43 @@
+//actual string
+String str = 'naufal';
+String subsStr = 'naufal';
+System.debug('my name is '+ str);
+
+//capitalize string
+System.debug('my name is ' + str.capitalize());
+
+//contains string
+String letter = 'a';
+System.debug(letter.capitalize()  + ' is contains in ' + str);
+
+System.debug(str.contains(letter));
+
+//converting string
+System.debug(str.toUpperCase());
+System.debug(str.toLowerCase());
+
+//check case sensitive
+System.debug(str.isAllUpperCase());
+System.debug(str.isAllLowerCase());
+
+//equals string
+System.debug('Equal Status: ' + str.equals(subsStr) );
+
+//indexOf
+System.debug(str.indexOf(letter));
+
+//length of the string 
+System.debug(str.length());
+
+//remove character of the string 
+System.debug(str.remove(letter));
+
+//replace sting 
+System.debug(str.replace(str, 'James'));
+
+//split 
+System.debug(str.split(''));
+
+//trim to remove white space
+String fullName = '  Naufal Al-Fachri  ';
+System.debug('remove white space: ' + fullName.trim());
