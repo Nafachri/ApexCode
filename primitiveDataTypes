@@ -1,3 +1,5 @@
+//06-06-2022
+
 //actual string
 String str = 'naufal';
 String subsStr = 'naufal';
@@ -41,3 +43,41 @@ System.debug(str.split(''));
 //trim to remove white space
 String fullName = '  Naufal Al-Fachri  ';
 System.debug('remove white space: ' + fullName.trim());
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//List of Number
+Integer num1 = 1;
+Integer num2 = 2;
+Integer num3 = 3;
+Integer num4 = 4;
+
+//declare on the object notation
+List<Integer> num = new List<Integer>{num1, num2, num3, num4};
+num.add(5);
+
+//get number by their indexes
+Integer getNumber = num.get(1);
+System.debug(getNumber);
+
+//adding by spesific indexes
+num.add(0, 10);
+num.add(5, 11);
+
+//get size 
+System.debug(num.size());
+
+//get how many indexes in num
+Integer indexes = num.size() - 1;
+System.debug(' There\'s ' + indexes + ' Indexes ' );
+
+//remove the item by index
+num.remove(0);
+num.remove(4);
+
+//update the index 
+num.set(0, 200);
+
+//clear the list
+num.clear();
+System.debug(num);
