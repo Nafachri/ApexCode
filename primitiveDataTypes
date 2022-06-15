@@ -71,13 +71,71 @@ System.debug(num.size());
 Integer indexes = num.size() - 1;
 System.debug(' There\'s ' + indexes + ' Indexes ' );
 
-//remove the item by index
-num.remove(0);
-num.remove(4);
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-//update the index 
-num.set(0, 200);
+//15-06-2022
 
-//clear the list
-num.clear();
-System.debug(num);
+<List> , <Set> , <Map <(key),(value)> >  
+
+Map
+
+Map<Integer, String> Nopzki4WD = new Map<Integer,String>();
+
+//add new item
+
+*Map must have a unique key 
+
+Nopzki4WD.put(1, 'Naufal');
+Nopzki4WD.put(2, 'Krisna');
+Nopzki4WD.put(3, 'Mardi');
+Nopzki4WD.put(4, 'Ano');
+Nopzki4WD.put(5, 'Giffy');
+Nopzki4WD.put(6, 'Jazman');
+Nopzki4WD.put(7, 'Dais');
+Nopzki4WD.put(8, 'Chabun');
+Nopzki4WD.put(9, 'Nugi');
+Nopzki4WD.put(10, 'Raihan');
+
+System.debug(Nopzki4WD);
+
+Map<Integer, String> Nopzki4WD = new Map<Integer,String>();
+
+//add new item
+Nopzki4WD.put(1, 'Naufal');
+Nopzki4WD.put(2, 'Krisna');
+Nopzki4WD.put(3, 'Mardi');
+Nopzki4WD.put(4, 'Ano');
+Nopzki4WD.put(5, 'Giffy');
+Nopzki4WD.put(6, 'Jazman');
+Nopzki4WD.put(7, 'Dais');
+Nopzki4WD.put(8, 'Chabun');
+Nopzki4WD.put(9, 'Nugi');
+Nopzki4WD.put(10, 'Raihan');
+
+System.debug(Nopzki4WD);
+
+//update item 
+but if the value was different
+it will be updated with new value with that key
+
+Nopzki4WD.put(10, 'Bambang');
+System.debug(Nopzki4WD);
+
+//get item on the map 
+System.debug(Nopzki4WD.get(1));
+
+//remove item 
+Nopzki4WD.remove(10);
+System.debug(Nopzki4WD);
+
+//get all the keys of the map
+Set<Integer> Nopzki4WDKeys = Nopzki4WD.keySet();
+System.debug(Nopzki4WDKeys);
+
+//get all the value of the map 
+List<String> Nopzki4WDValues = Nopzki4WD.values();
+System.debug(Nopzki4WDValues);
+
+//check of the map contains a key
+System.debug(Nopzki4WD.containsKey(11));
+
