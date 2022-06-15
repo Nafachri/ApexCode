@@ -139,3 +139,21 @@ System.debug(Nopzki4WDValues);
 //check of the map contains a key
 System.debug(Nopzki4WD.containsKey(11));
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//Challenge 1
+
+
+List<String> apexPosts = new List<String>{'Hello This is Apex', 'Apex is Great'};
+List<String> lightningPosts = new List<String>{'I am Lightning', 'Kaboom'};
+
+// mapping 
+
+    Map<String, List<String>> allPosts = new Map<String, List<String>>();
+
+// insert apex post
+	allPosts.put('Apex', apexPosts);
+	allPosts.put('Lightning', lightningPosts);
+
+System.debug(allPosts);
+
