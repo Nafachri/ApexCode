@@ -157,3 +157,42 @@ List<String> lightningPosts = new List<String>{'I am Lightning', 'Kaboom'};
 
 System.debug(allPosts);
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//16-06-2022
+
+//constant variable
+
+String name = 'Naufal';
+//this string still can be change because we didn't set it constant
+name = 'Nopzki';
+
+System.debug(name);
+
+// if u want to set constant variable use 'final'
+
+final Integer num = 30;
+num = 20;
+// it cannot be change from 30 to 20
+System.debug(num);
+
+// Apex Expression
+String firstName = 'Naufal';
+String lastName = 'Al-Fachri';
+// + is expression
+System.debug(firstName + lastName);
+
+Integer plus = 25 + 5;
+System.debug(plus);
+
+Integer divided  =25 / 5;
+System.debug(divided);
+
+// assignment 
+
+Integer num = 5 ;
+
+// additional assignment
+
+num = num * 5 + 5;
+System.debug(num);
