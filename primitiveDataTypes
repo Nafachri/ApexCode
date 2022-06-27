@@ -182,17 +182,168 @@ String lastName = 'Al-Fachri';
 // + is expression
 System.debug(firstName + lastName);
 
-Integer plus = 25 + 5;
-System.debug(plus);
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//27-06-2022
 
-Integer divided  =25 / 5;
-System.debug(divided);
+// Operators
 
-// assignment 
-
-Integer num = 5 ;
-
-// additional assignment
-
-num = num * 5 + 5;
+Integer num  = 10;
 System.debug(num);
+
+// plus 
+num = num + 10;
+System.debug(num);
+
+// minus 
+num = num - 10;
+system.debug(num);
+
+// multiple
+num = num * 10;
+System.debug(num);
+
+// divide 
+num = num/5;
+System.debug(num);
+
+// increment operator 
+num++;
+System.debug(num);
+
+// decrement operator
+num--;
+System.debug(num);
+
+// addition assignment operator
+num += 5;
+System.debug(num);
+
+// substraction assignment operator 
+num -= 5;
+System.debug(num);
+
+// multiple assignment operator 
+num *= 5;
+System.debug(num);
+
+// divide assignment operator 
+num /= 5;
+System.debug(num);
+
+//additional string operator 
+String hello = 'Hello';
+String world = 'World';
+System.debug(hello + world);
+
+// adding space 
+System.debug(hello + ' ' + world);
+
+Boolean first = true;
+Boolean last = false;
+Boolean result;
+
+//AND Operator
+result = first && last;
+System.debug('and operator ' + result);
+
+//Or Operator
+result = first || last;
+System.debug('or operator ' + result);
+
+//Equality Operator
+result = first == last;
+System.debug('equality operator ' + result);
+
+// Less Than Operator
+result = (5 < 6); 
+System.debug('less than operator '+ result);
+             
+//Greater Than Operator
+result = (4 > 7);
+System.debug('greater than operator '+result);
+         
+//less than or equal Operator
+result = (5 <= 6);
+System.debug('less than or equal operator ' + result);
+result = (5 <= 5);
+System.debug('less than or equal operator 2 ' + result);
+result = (6 <= 5);
+System.debug('less than or equal operator 3 ' + result);
+
+//greater than or equal Operator 
+result = (6 >= 5);
+System.debug('greater than or equal operator ' + result);
+result = (6 >= 6);
+System.debug('greater than or equal operator ' + result);
+result = (3 >= 6);
+System.debug('greater than or equal operator ' + result);
+
+//NOT Operator
+
+System.debug('NOT Operator before ' + first);
+first = !first;
+System.debug('NOT Operator after ' + first);
+
+//Ternary Operator
+String greetings = '';
+Integer hour = 10;
+//if hour less than 12 say goodmorning
+//else say goodafternoon
+greetings = (hour < 12) ? 'Good Morning Lads' : 'GoodAfternoon Brotha';
+System.debug('Ternary Operator less than 12 '+ greetings);
+hour = 15;
+greetings = (hour < 12) ? 'Good Morning Lads' : 'GoodAfternoon Brotha';
+System.debug('Ternary Operator greater than 12 ' + greetings );
+
+//Challenge 2 Operator
+
+// 1 Slice = $8/Slice
+// 2-3 Slice = $7/Slice
+// lebih dari 3 = $6/Slice
+
+// Ross = 3 Slice
+// Chandler = 1 Slice 
+// Joey = 4 Slice
+
+
+final Integer satuSlice = 8;
+final Integer duatigaSlice = 7;
+final Integer lebihdari3 = 6;
+
+Integer Ross = 3;
+Integer Chandler = 1;
+Integer Joey = 4;
+
+
+/*
+Cara 1 : 
+
+Ross = (Ross > 2 )? duatigaSlice*Ross : null;
+System.debug('Ross  $' + Ross);
+
+Chandler = (Chandler == 1) ? satuSlice*Chandler : null;
+System.debug('Chandler  $' + Chandler);
+
+Joey = (Joey > 3 ) ? lebihdari3*Joey : null;
+System.debug('Joey  $' + Joey);
+*/
+
+/* Cara 2 
+
+Integer RossHasToPay = Ross == 1 ? satuSlice*Ross :
+	(Ross <= 3 ? duatigaSlice*Ross : lebihdari3*Ross);
+
+System.debug('Ross Has To Pay $' + RossHasToPay);
+
+Integer ChadlerHasToPay = Chandler == 1 ? satuSlice*Chandler :
+	(Ross <= 3 ? duatigaSlice*Chandler : lebihdari3*Chandler);
+ 
+System.debug('Chandler Has To Pay $' + ChadlerHasToPay);
+
+Integer JoeyHasToPay = Joey == 1 ? satuSlice*Joey : 
+	(Joey <=3 ? duatigaSlice*Joey : lebihdari3*Joey);
+
+System.debug('Joey Has To Pay $' + JoeyHasToPay );
+*/
+
+
