@@ -346,4 +346,29 @@ Integer JoeyHasToPay = Joey == 1 ? satuSlice*Joey :
 System.debug('Joey Has To Pay $' + JoeyHasToPay );
 */
 
+//Datatypes Conversion
+
+String nilaiMtk = '42';
+String nilaiBahasa = '80';
+String nilaiGeografi = '70';
+String nilaiSejarah = '90';
+
+//String to Integer
+Integer total = 
+Integer.valueOf(nilaiMtk) + Integer.valueOf(nilaiBahasa) + 
+Integer.valueOf(nilaiGeografi) + Integer.valueOf(nilaiSejarah);
+
+System.debug('total nilai Integer ' + total);
+
+//String to Integer to String again
+String totalNilai = String.valueOf(
+Integer.valueOf(nilaiMtk) + Integer.valueOf(nilaiBahasa) + 
+Integer.valueOf(nilaiGeografi) + Integer.valueOf(nilaiSejarah)
+);
+
+System.debug('total nilai string ' + totalNilai);
+
+
+
+
 
